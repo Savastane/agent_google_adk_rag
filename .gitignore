@@ -1,0 +1,14 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db

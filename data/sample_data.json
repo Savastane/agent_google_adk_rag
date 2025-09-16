@@ -1,0 +1,31 @@
+{
+  "documents": [
+    {
+      "id": "doc1",
+      "subject": "IA_Conceitos",
+      "content": "A inteligência artificial (IA) é um campo da ciência da computação que se dedica a criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana."
+    },
+    {
+      "id": "doc2",
+      "subject": "IA_Conceitos",
+      "content": "O processamento de linguagem natural (PLN) é uma subárea da IA que permite que os computadores entendam, interpretem e gerem a linguagem humana."
+    },
+    {
+      "id": "doc3",
+      "subject": "IA_Modelos",
+      "content": "As redes neurais são um modelo computacional inspirado no cérebro humano, usado em muitas aplicações de IA, incluindo o PLN."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {"id": "IA", "label": "Campo", "properties": {"name": "Inteligência Artificial"}},
+      {"id": "PLN", "label": "Subárea", "properties": {"name": "Processamento de Linguagem Natural"}},
+      {"id": "Redes Neurais", "label": "Modelo", "properties": {"name": "Redes Neurais"}}
+    ],
+    "relationships": [
+      {"source": "PLN", "target": "IA", "type": "É_UMA_SUBÁREA_DE"},
+      {"source": "Redes Neurais", "target": "IA", "type": "É_USADO_EM"},
+      {"source": "Redes Neurais", "target": "PLN", "type": "É_USADO_EM"}
+    ]
+  }
+}
