@@ -2,7 +2,9 @@
 services:
   agent:
     build:
-      context: ./agent
+            context: ./agent
+    env_file:
+      - .env
     ports:
       - "3232:3232"
     environment:
