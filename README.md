@@ -52,6 +52,8 @@ Após os contêineres estarem em execução, execute o script de ingestão de da
 
 ```bash
 docker-compose exec agent python ingest.py
+docker-compose exec agent python ingest_pdfs.py --subject "Inteligência Artificial"
+docker-compose exec agent python ingest_pdfs.py --dir "caminho/para/sua/pasta" --subject "Seu Assunto"
 ```
 
 Você pode executar este comando em um terminal separado. Ele se conectará aos bancos de dados em execução dentro dos contêineres.
@@ -105,3 +107,28 @@ docker-compose down -v
 ├── ingest.py         # Script para ingestão de dados
 └── README.md         # Este arquivo
 ```
+python -m venv venv
+.\venv\Scripts\activate
+adk web agent/agent.py:rag_agent --port 3232
+adk web agent --port 3232
+adk web --port 3232
+
+dentro
+bolt://neo4j:7687
+fora docker
+bolt://localhost:7687
+neo4j
+password
+
+
+docker-compose up --build -d
+
+
+
+--instalar manualmente
+docker-compose exec agent pip install google-adk
+
+docker-compose logs agent --tail 200
+docker-compose exec agent pip show google-adk
+docker-compose exec agent pip list
+docker-compose exec agent python -c "import google; import pkgutil; print('google.adk' in [m.name for m in pkgutil.iter_modules(google.__path__)])"

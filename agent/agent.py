@@ -10,21 +10,21 @@ from .tools import vector_search, graph_search, document_processor
 
 
 
-def create_rag_agent() -> Agent:
-    """Creates the RAG agent with vector and graph search tools."""
+# def create_rag_agent() -> Agent:
+#     """Creates the RAG agent with vector and graph search tools."""
 
-    vector_search_tool = FunctionTool(
-        fn=vector_search.search,
-        description="Busca por documentos relevantes no banco de dados vetorial. Pode ser opcionalmente filtrado por 'assunto'.
-    )
-    graph_search_tool = FunctionTool(
-        fn=graph_search.search,
-        description="Busca por entidades e relacionamentos no banco de dados de grafos."
-    )
-    remove_document_tool = FunctionTool(
-        fn=document_processor.remove_document,
-        description="Remove um documento da base de conhecimento a partir de seu ID."
-    )
+#     vector_search_tool = FunctionTool(
+#         fn=vector_search.search,
+#         description="Busca por documentos relevantes no banco de dados vetorial. Pode ser opcionalmente filtrado por 'assunto'.
+#     )
+#     graph_search_tool = FunctionTool(
+#         fn=graph_search.search,
+#         description="Busca por entidades e relacionamentos no banco de dados de grafos."
+#     )
+#     remove_document_tool = FunctionTool(
+#         fn=document_processor.remove_document,
+#         description="Remove um documento da base de conhecimento a partir de seu ID."
+#     )
 
     # The system prompt tells the agent how to behave.
     # It can be used to provide context, instructions, and personality.
@@ -50,19 +50,18 @@ def create_rag_agent() -> Agent:
 
 root_agent = Agent(
     name="agent",
-    model="gemini-2.0-flash", 
-    
-    description="Creates the RAG agent with vector and graph search tools.",
+    model="gemini-2.0-flash",
+    description="Um agente de suporte ao cliente  que usa RAG com bancos de dados vetoriais e de grafos. ultilizado por funcionarios da empresa ADN",
     instruction=(
+        "sempre que der alguma responsta informe que você é um agente de suporte ao cliente"
         "Você é um assistente prestativo que responde a perguntas usando uma combinação de busca "
-        "em banco de dados vetorial e de grafos. Você também pode remover documentos da base de conhecimento. "
-        "Ao pesquisar, primeiro, use a busca vetorial para encontrar documentos "
-        "relevantes. Em seguida, use a busca de grafos para encontrar entidades e "
-        "relacionamentos relacionados. Por fim, use o modelo de linguagem (Gemini) para sintetizar as informações de ambas as fontes e "
-        "fornecer uma resposta abrangente e bem elaborada em português."
-        
-    )
-    ,tools=[vector_search.search, graph_search.search] # Adicione a ferramenta ao seu agente
+        "mostre os parameros de pesquisa no vetorial e no graph"
+        "acrescente no contexto a empresa ADN"
+        "nos bancos de dados vetorial e de grafos. Sua resposta deve ser baseada SOMENTE nas informações retornadas pelas ferramentas de busca. "        
+        "Não use conhecimento externo. Primeiro, use a busca vetorial para encontrar documentos relevantes. Em seguida, use a busca de grafos para encontrar entidades e relacionamentos. "
+        "Por fim, sintetize as informações de ambas as fontes para fornecer uma resposta abrangente e bem elaborada em português."
+    ),
+    tools=[vector_search.vectorsearch, graph_search.graphsearch]
 )
 
 #rag_agent = create_rag_agent()

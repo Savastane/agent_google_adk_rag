@@ -1,31 +1,438 @@
 {
   "documents": [
     {
-      "id": "doc1",
-      "subject": "IA_Conceitos",
-      "content": "A inteligência artificial (IA) é um campo da ciência da computação que se dedica a criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana."
+      "id": "person_summary",
+      "subject": "Savastane Santana",
+      "content": "Savastane Santana é um profissional com experiência e formação descritas em seu currículo."
     },
     {
-      "id": "doc2",
-      "subject": "IA_Conceitos",
-      "content": "O processamento de linguagem natural (PLN) é uma subárea da IA que permite que os computadores entendam, interpretem e gerem a linguagem humana."
+      "id": "edu_Savastane_Santana",
+      "subject": "Educação",
+      "content": "PUC Minas - Concluído em Março de 2024\n● Pós-graduação em Arquitetura de Sistemas Distribuídos\nFBB - Bahia - Concluído em Marco 2010\n● Graduação em Teologia"
     },
     {
-      "id": "doc3",
-      "subject": "IA_Modelos",
-      "content": "As redes neurais são um modelo computacional inspirado no cérebro humano, usado em muitas aplicações de IA, incluindo o PLN."
+      "id": "exp_Savastane_Santana",
+      "subject": "Experiência",
+      "content": "Adn.Tech (2024 - atual)\nAtuação na sustentação de sistemas na área de arrecadação e mobilidade de concessões,\noferecendo suporte e melhorias contínuas para diversas concessionárias de pedágio na\nbrasil.\n● Suporte e implementou melhorias contínuas em sistemas de arrecadação e\nmobilidade para concessionárias.\n● Soluções utilizando Oracle, PL/SQL (packages, triggers, procedures), C# .NET MVC,\nAngularJS, Pascal/Delphi, EDI e mensageria.\n● Otimização processos de integração, reduzindo gargalos de desempenho em 15%.\nEduca Mais Brasil (2011 - 2023)\nDesenvolvedor de Aplicações Web\n● Liderei o desenvolvimento de uma plataforma de marketplace para comércio\neletrônico, garantindo escalabilidade e robustez.\n● Implementei sistema de financiamento estudantil, facilitando o acesso à educação\npara milhares de usuários.\n● Desenvolvi o sistema Academico como Tech Lider, abrangendo módulos\npedagógico, financeiro, documentos e portal do aluno, integrando processos\nacadêmicos.\n● Criou APIs REST e SOAP em C# .NET, promovendo interoperabilidade entre\nsistemas.\n● Desenvolvi sistema de emissão de notas fiscais eletrônicas, automatizando\nprocessos fiscais.\n● Tecnologias utilizadas: .NET, C#, MVC, JavaScript, Bootstrap, Oracle, Delphi.\nLe Biscuit (2010 - 2011)\nAnalista de Sistemas – Manutenção de ERP\n● Realizei manutenção e melhorias no ERP Próton, garantindo estabilidade e\ndesempenho.\n● Implementei correções de bugs e otimizações, melhorando a funcionalidade do\nsistema em 10%.\n● Criei e Utilizei cubos OLAP para análise de dados e geração de relatórios gerenciais.\n● Tecnologias utilizadas: Delphi, Oracle.\nAdn.Tech (2005- 2009)\nPrincipais Projetos e Responsabilidades:\n● Sistema de Apoio ao Pedágio (CCR): Desenvolvimento e manutenção de sistemas\nde apoio para a operação de pedágios, garantindo eficiência e confiabilidade nas\ntransações e operações.\n● ERP (Enterprise Resource Planning): Implementação e manutenção de sistemas\nERP para integração e gerenciamento eficaz dos processos empresariais.\n● Sistema de Nota Fiscal Eletrônica (NFe): Desenvolvimento de soluções para a\nemissão e gestão de notas fiscais eletrônicas, automatizando processos e\ngarantindo conformidade com a legislação.\n● Sistema de degestão de Treinamento (Cetrel):\nSimetriaNet (1998- 2005)\nDesenvolvedor Delphi / SQL Server\n● Desenvolvimento de sistema de apoio ao pedágio para a CCR, assegurando\neficiência nas operações.\n● Implementou módulos de ERP para integração de processos empresariais.\n● Criação de sistema de emissão de notas fiscais eletrônicas, garantindo\nconformidade regulatória.\n● Desenvolvimento sistema de gestão de treinamentos para a Cetrel.\n● Tecnologias utilizadas: Delphi, Oracle, PL/SQL."
+    },
+    {
+      "id": "skills_Savastane_Santana",
+      "subject": "Habilidades",
+      "content": "● Orientação a Objetos: (Princípios SOLID)\n● Padrões de Projeto: Singleton, Factory, Specification etc..\n● Encapsulamento, Herança, Polimorfismo.\n● Arquitetura Limpa:\n● CQRS\n● Testes de Integração/ Unitários:\n● Protocolo HTTP/s:\n● API REST/gRPC:\n● Ferramentas de Controle de Versão:\n● Git.\n● Lambdas Function\n● Conhecimento básico de Docker Contêineres Images\n● Identificação e resolução de gargalos de desempenho.\n● Otimização de consultas de banco de dados.\n● Procedures, triggers, packages\n● Configuração de pipelines de CI/CD GitActions.\n● C4 Model\nhabilidades C# .net\n● API Controller\n● MinimalAPI\n● Autenticação e Autorização:\n● Inversão de Controle e Injeção de Dependência\n● Programação Assíncrona\n● Entity Framework\n● JWT\n● Cache\n● FluentValidation\n● Logs\n● Swagger/OpenAPI:\n● CQRS\n● Manipulação JSON\n● API Gateway"
     }
   ],
   "graph": {
     "nodes": [
-      {"id": "IA", "label": "Campo", "properties": {"name": "Inteligência Artificial"}},
-      {"id": "PLN", "label": "Subárea", "properties": {"name": "Processamento de Linguagem Natural"}},
-      {"id": "Redes Neurais", "label": "Modelo", "properties": {"name": "Redes Neurais"}}
+      {
+        "id": "Savastane_Santana",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Savastane Santana"
+        }
+      },
+      {
+        "id": "Instituição_de_Ensino",
+        "label": "Instituicao",
+        "properties": {
+          "name": "Instituição de Ensino"
+        }
+      },
+      {
+        "id": "Empresa",
+        "label": "Empresa",
+        "properties": {
+          "name": "Empresa"
+        }
+      },
+      {
+        "id": "●_Orientação_a_Objetos:_(Princípios_SOLID)",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Orientação a Objetos: (Princípios SOLID)"
+        }
+      },
+      {
+        "id": "●_Padrões_de_Projeto:_Singleton,_Factory,_Specification_etc..",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Padrões de Projeto: Singleton, Factory, Specification etc.."
+        }
+      },
+      {
+        "id": "●_Encapsulamento,_Herança,_Polimorfismo.",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Encapsulamento, Herança, Polimorfismo."
+        }
+      },
+      {
+        "id": "●_Arquitetura_Limpa:",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Arquitetura Limpa:"
+        }
+      },
+      {
+        "id": "●_CQRS",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● CQRS"
+        }
+      },
+      {
+        "id": "●_Testes_de_Integração/_Unitários:",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Testes de Integração/ Unitários:"
+        }
+      },
+      {
+        "id": "●_Protocolo_HTTP/s:",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Protocolo HTTP/s:"
+        }
+      },
+      {
+        "id": "●_API_REST/gRPC:",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● API REST/gRPC:"
+        }
+      },
+      {
+        "id": "●_Ferramentas_de_Controle_de_Versão:",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Ferramentas de Controle de Versão:"
+        }
+      },
+      {
+        "id": "●_Git.",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Git."
+        }
+      },
+      {
+        "id": "●_Lambdas_Function",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Lambdas Function"
+        }
+      },
+      {
+        "id": "●_Conhecimento_básico_de_Docker_Contêineres_Images",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Conhecimento básico de Docker Contêineres Images"
+        }
+      },
+      {
+        "id": "●_Identificação_e_resolução_de_gargalos_de_desempenho.",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Identificação e resolução de gargalos de desempenho."
+        }
+      },
+      {
+        "id": "●_Otimização_de_consultas_de_banco_de_dados.",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Otimização de consultas de banco de dados."
+        }
+      },
+      {
+        "id": "●_Procedures,_triggers,_packages",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Procedures, triggers, packages"
+        }
+      },
+      {
+        "id": "●_Configuração_de_pipelines_de_CI/CD_GitActions.",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Configuração de pipelines de CI/CD GitActions."
+        }
+      },
+      {
+        "id": "●_C4_Model",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● C4 Model"
+        }
+      },
+      {
+        "id": "habilidades_C#_.net",
+        "label": "Habilidade",
+        "properties": {
+          "name": "habilidades C# .net"
+        }
+      },
+      {
+        "id": "●_API_Controller",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● API Controller"
+        }
+      },
+      {
+        "id": "●_MinimalAPI",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● MinimalAPI"
+        }
+      },
+      {
+        "id": "●_Autenticação_e_Autorização:",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Autenticação e Autorização:"
+        }
+      },
+      {
+        "id": "●_Inversão_de_Controle_e_Injeção_de_Dependência",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Inversão de Controle e Injeção de Dependência"
+        }
+      },
+      {
+        "id": "●_Programação_Assíncrona",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Programação Assíncrona"
+        }
+      },
+      {
+        "id": "●_Entity_Framework",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Entity Framework"
+        }
+      },
+      {
+        "id": "●_JWT",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● JWT"
+        }
+      },
+      {
+        "id": "●_Cache",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Cache"
+        }
+      },
+      {
+        "id": "●_FluentValidation",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● FluentValidation"
+        }
+      },
+      {
+        "id": "●_Logs",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Logs"
+        }
+      },
+      {
+        "id": "●_Swagger/OpenAPI:",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Swagger/OpenAPI:"
+        }
+      },
+      {
+        "id": "●_Manipulação_JSON",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● Manipulação JSON"
+        }
+      },
+      {
+        "id": "●_API_Gateway",
+        "label": "Habilidade",
+        "properties": {
+          "name": "● API Gateway"
+        }
+      }
     ],
     "relationships": [
-      {"source": "PLN", "target": "IA", "type": "É_UMA_SUBÁREA_DE"},
-      {"source": "Redes Neurais", "target": "IA", "type": "É_USADO_EM"},
-      {"source": "Redes Neurais", "target": "PLN", "type": "É_USADO_EM"}
+      {
+        "source": "Savastane_Santana",
+        "target": "Instituição_de_Ensino",
+        "type": "ESTUDOU_EM"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "Empresa",
+        "type": "TRABALHOU_EM"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Orientação_a_Objetos:_(Princípios_SOLID)",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Padrões_de_Projeto:_Singleton,_Factory,_Specification_etc..",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Encapsulamento,_Herança,_Polimorfismo.",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Arquitetura_Limpa:",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_CQRS",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Testes_de_Integração/_Unitários:",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Protocolo_HTTP/s:",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_API_REST/gRPC:",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Ferramentas_de_Controle_de_Versão:",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Git.",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Lambdas_Function",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Conhecimento_básico_de_Docker_Contêineres_Images",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Identificação_e_resolução_de_gargalos_de_desempenho.",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Otimização_de_consultas_de_banco_de_dados.",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Procedures,_triggers,_packages",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Configuração_de_pipelines_de_CI/CD_GitActions.",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_C4_Model",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "habilidades_C#_.net",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_API_Controller",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_MinimalAPI",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Autenticação_e_Autorização:",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Inversão_de_Controle_e_Injeção_de_Dependência",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Programação_Assíncrona",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Entity_Framework",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_JWT",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Cache",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_FluentValidation",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Logs",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Swagger/OpenAPI:",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_CQRS",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_Manipulação_JSON",
+        "type": "POSSUI_HABILIDADE"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "●_API_Gateway",
+        "type": "POSSUI_HABILIDADE"
+      }
     ]
   }
 }

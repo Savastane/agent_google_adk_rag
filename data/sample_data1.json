@@ -1,0 +1,31 @@
+{
+  "documents": [
+    {
+      "id": "doc1",
+      "subject": "Savastane",
+      "content": "Savastane. é dono do canal Savastane"
+    },
+    {
+      "id": "doc2",
+      "subject": "Savastane",
+      "content": "Savastane é de salvador"
+    },
+    {
+      "id": "doc3",
+      "subject": "Savastane",
+      "content": "Savastane é formado em. FBB"
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {"id": "IA", "label": "Campo", "properties": {"name": "Inteligência Artificial"}},
+      {"id": "PLN", "label": "Subárea", "properties": {"name": "Processamento de Linguagem Natural"}},
+      {"id": "Savastane", "label": "Modelo", "properties": {"name": "Savastane"}}
+    ],
+    "relationships": [
+      {"source": "PLN", "target": "IA", "type": "É_UMA_SUBÁREA_DE"},
+      {"source": "Savastane", "target": "IA", "type": "É_USADO_EM"},
+      {"source": "Savastane", "target": "PLN", "type": "É_USADO_EM"}
+    ]
+  }
+}

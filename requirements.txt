@@ -1,0 +1,7 @@
+psycopg2-binary
+pgvector
+neo4j
+sentence-transformers
+python-dotenv
+pdfplumber
+pypdf

@@ -1,0 +1,13 @@
+google-adk
+psycopg2-binary
+pgvector
+neo4j
+sentence-transformers
+fastapi
+uvicorn[standard]
+python-dotenv
+pypdf
+python-docx
+Markdown
+python-multipart
+

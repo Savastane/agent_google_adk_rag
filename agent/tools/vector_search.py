@@ -1,4 +1,5 @@
 import os
+from typing import Optional
 import psycopg2
 from pgvector.psycopg2 import register_vector
 from sentence_transformers import SentenceTransformer
@@ -16,29 +17,47 @@ def get_db_connection():
     )
     return conn
 
-def search(query: str, subject: str = None, limit: int = 5) -> list[str]:
-    """Searches for relevant documents in the vector database, optionally filtering by subject."""
+def vectorsearch(query: str, subject: Optional[str] = None, limit: int = 5) -> list[dict]:
+    """Busca documentos relevantes no banco de dados vetorial, retornando uma lista de dicionários com os resultados.
+
+    Cada dicionário contém 'id', 'subject', 'content' e 'similarity_score'.
+    Opcionalmente, pode filtrar por 'subject'.
+    """
     conn = get_db_connection()
     register_vector(conn)
     cur = conn.cursor()
+    print("query savastane",query)
 
-    # Generate embedding for the query
+    
+    # Gerar o embedding para a consulta
     query_embedding = model.encode(query)
 
-    # Build the SQL query dynamically
-    sql_query = "SELECT content FROM documents"
-    params = []
+    # Construir a consulta SQL dinamicamente
+    base_query = "SELECT id, subject, content, 1 - (embedding <=> %s) AS similarity_score FROM documents"
+    params = [query_embedding]
+    where_clauses = []
 
     if subject:
-        sql_query += " WHERE subject = %s"
+        where_clauses.append("subject = %s")
         params.append(subject)
-    
-    sql_query += " ORDER BY embedding <=> %s LIMIT %s"
-    params.append(query_embedding)
+
+    if where_clauses:
+        base_query += " WHERE " + " AND ".join(where_clauses)
+
+    base_query += " ORDER BY similarity_score DESC LIMIT %s"
     params.append(limit)
 
-    cur.execute(sql_query, tuple(params))
-    results = [row[0] for row in cur.fetchall()]
+    cur.execute(base_query, tuple(params))
+    
+    # Mapear os resultados para uma lista de dicionários
+    results = []
+    for row in cur.fetchall():
+        results.append({
+            "id": row[0],
+            "subject": row[1],
+            "content": row[2],
+            "similarity_score": round(row[3], 4)
+        })
 
     cur.close()
     conn.close()

@@ -19,8 +19,8 @@ services:
       - postgres
       - neo4j
     volumes:
-      - ./agent:/app/agent
       - ./ingest.py:/app/ingest.py
+      - ./ingest_pdfs.py:/app/ingest_pdfs.py
       - ./data:/app/data
     command: uvicorn agent.main:app --host 0.0.0.0 --port 3232 --reload
 

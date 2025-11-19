@@ -3,7 +3,7 @@ from io import BytesIO
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Path, status
 from google.adk.runtime.agents import run_agent
 
-from .agent import rag_agent
+from .agent import root_agent
 from .tools import document_processor
 
 app = FastAPI(
@@ -61,4 +61,4 @@ async def delete_document(doc_id: str = Path(..., description="The ID of the doc
 
 # The ADK runtime will automatically discover this endpoint and
 # generate an OpenAPI spec for it.
-run_agent(rag_agent, app)
+run_agent(root_agent, app)
