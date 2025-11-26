@@ -132,3 +132,6 @@ docker-compose logs agent --tail 200
 docker-compose exec agent pip show google-adk
 docker-compose exec agent pip list
 docker-compose exec agent python -c "import google; import pkgutil; print('google.adk' in [m.name for m in pkgutil.iter_modules(google.__path__)])"
+
+apresente o resumo KCS do chamado 20251027039071
+Analise o chamado 20251027039071 e envie o resumo KCS para o WhatsApp 5571988183587

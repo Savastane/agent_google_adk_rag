@@ -3,7 +3,8 @@ import os
 from google.adk.agents import Agent
 from google.adk.tools import FunctionTool
 
-from .tools import vector_search, graph_search, document_processor
+from .tools import vector_search, graph_search, document_processor, kcs_tool
+from agentZap.tools import whatsapp_sender
 
 # Configure the Gemini API key
 #genai.configure(api_key=os.environ["GEMINI_API_KEY"])
@@ -49,7 +50,7 @@ from .tools import vector_search, graph_search, document_processor
 
 
 root_agent = Agent(
-    name="agent",
+    name="agentSuporte",
     model="gemini-2.0-flash",
     description="Um agente de suporte ao cliente  que usa RAG com bancos de dados vetoriais e de grafos. ultilizado por funcionarios da empresa ADN",
     instruction=(
@@ -60,8 +61,10 @@ root_agent = Agent(
         "nos bancos de dados vetorial e de grafos. Sua resposta deve ser baseada SOMENTE nas informações retornadas pelas ferramentas de busca. "        
         "Não use conhecimento externo. Primeiro, use a busca vetorial para encontrar documentos relevantes. Em seguida, use a busca de grafos para encontrar entidades e relacionamentos. "
         "Por fim, sintetize as informações de ambas as fontes para fornecer uma resposta abrangente e bem elaborada em português."
+        "Você também possui uma ferramenta especializada para gerar artigos de conhecimento KCS a partir de números de chamados. Se o usuário pedir para analisar um chamado ou gerar um artigo, use a ferramenta 'gerar_artigo_kcs'."
+        "Além disso, você tem a capacidade de enviar mensagens para o WhatsApp. Se solicitado a enviar um resumo de chamado ou qualquer informação para um número de telefone, use a ferramenta 'enviar_mensagem_whatsapp'."
     ),
-    tools=[vector_search.vectorsearch, graph_search.graphsearch]
+    tools=[vector_search.vectorsearch, graph_search.graphsearch, kcs_tool.gerar_artigo_kcs, whatsapp_sender.enviar_mensagem_whatsapp]
 )
 
 #rag_agent = create_rag_agent()
