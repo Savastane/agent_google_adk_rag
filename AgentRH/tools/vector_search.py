@@ -5,7 +5,16 @@ from pgvector.psycopg2 import register_vector
 from sentence_transformers import SentenceTransformer
 
 # Initialize the sentence transformer model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+# model = SentenceTransformer('all-MiniLM-L6-v2')
+_model = None
+
+def get_model():
+    global _model
+    if _model is None:
+        print("Carregando modelo SentenceTransformer...")
+        _model = SentenceTransformer('all-MiniLM-L6-v2')
+        print("Modelo carregado.")
+    return _model
 
 def get_db_connection():
     """Establishes a connection to the PostgreSQL database."""
@@ -30,6 +39,7 @@ def vectorsearch(query: str, subject: Optional[str] = None, limit: int = 5) -> l
 
     
     # Gerar o embedding para a consulta
+    model = get_model()
     query_embedding = model.encode(query)
 
     # Construir a consulta SQL dinamicamente
