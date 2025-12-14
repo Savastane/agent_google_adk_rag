@@ -24,6 +24,50 @@
   "graph": {
     "nodes": [
       {
+        "id": "ADN_Tech",
+        "label": "Empresa",
+        "properties": {
+          "name": "ADN Tech",
+          "departamento": "SUAT"
+        }
+      },
+      {
+        "id": "José_Lider",
+        "label": "Pessoa",
+        "properties": {
+          "name": "José",
+          "cargo": "Líder da Equipe SUAT"
+        }
+      },
+      {
+        "id": "Rogério_Bueno",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Rogério Bueno"
+        }
+      },
+      {
+        "id": "Jonatas",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Jonatas"
+        }
+      },
+      {
+        "id": "Fabiana",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Fabiana"
+        }
+      },
+      {
+        "id": "William_Peter",
+        "label": "Pessoa",
+        "properties": {
+          "name": "William Peter"
+        }
+      },
+      {
         "id": "Savastane_Santana",
         "label": "Pessoa",
         "properties": {
@@ -31,17 +75,59 @@
         }
       },
       {
+        "id": "Pamela",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Pamela"
+        }
+      },
+      {
+        "id": "Luciano_Paiva",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Luciano Paiva"
+        }
+      },
+      {
+        "id": "Leonardo",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Leonardo"
+        }
+      },
+      {
+        "id": "Claudenes",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Claudenes"
+        }
+      },
+      {
+        "id": "Adriana",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Adriana"
+        }
+      },
+      {
+        "id": "Everson",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Everson"
+        }
+      },
+      {
+        "id": "Jô",
+        "label": "Pessoa",
+        "properties": {
+          "name": "Jô"
+        }
+      },
+      {
         "id": "Instituição_de_Ensino",
         "label": "Instituicao",
         "properties": {
           "name": "Instituição de Ensino"
-        }
-      },
-      {
-        "id": "Empresa",
-        "label": "Empresa",
-        "properties": {
-          "name": "Empresa"
         }
       },
       {
@@ -264,14 +350,77 @@
     ],
     "relationships": [
       {
-        "source": "Savastane_Santana",
-        "target": "Instituição_de_Ensino",
-        "type": "ESTUDOU_EM"
+        "source": "José_Lider",
+        "target": "ADN_Tech",
+        "type": "LIDER_TIME",
+        "properties": {
+          "time": "SUAT"
+        }
+      },
+      {
+        "source": "Rogério_Bueno",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Jonatas",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Fabiana",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "William_Peter",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
       },
       {
         "source": "Savastane_Santana",
-        "target": "Empresa",
-        "type": "TRABALHOU_EM"
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Pamela",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Luciano_Paiva",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Leonardo",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Claudenes",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Adriana",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Everson",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Jô",
+        "target": "ADN_Tech",
+        "type": "TRABALHA_EM"
+      },
+      {
+        "source": "Savastane_Santana",
+        "target": "Instituição_de_Ensino",
+        "type": "ESTUDOU_EM"
       },
       {
         "source": "Savastane_Santana",
@@ -416,11 +565,6 @@
       {
         "source": "Savastane_Santana",
         "target": "●_Swagger/OpenAPI:",
-        "type": "POSSUI_HABILIDADE"
-      },
-      {
-        "source": "Savastane_Santana",
-        "target": "●_CQRS",
         "type": "POSSUI_HABILIDADE"
       },
       {
