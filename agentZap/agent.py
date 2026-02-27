@@ -3,7 +3,7 @@ from .tools import whatsapp_sender
 
 root_agent = Agent(
     name="agentZap",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Um agente especializado em comunicação e envio de notificações via WhatsApp.",
     instruction=(
         "Você é um assistente de comunicação responsável por notificar usuários via WhatsApp. "

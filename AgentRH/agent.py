@@ -48,7 +48,8 @@ from .tools import vector_search, graph_search, document_processor
 
 root_agent = Agent(
     name="agentRH",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
+    
     description="Um agente especialista em EM RH da empresa ADN que usa RAG com bancos de dados vetoriais e de grafos. ultilizado por funcionarios da empresa ADN",
     instruction=(
         "Você é um assistente prestativo que responde a perguntas usando uma combinação de busca "

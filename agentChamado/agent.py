@@ -3,7 +3,7 @@ from .tools import chamado_loader
 
 root_agent = Agent(
     name="agentChamado",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Um agente especialista em analisar chamados de suporte e gerar artigos de conhecimento KCS.",
     instruction=(
         "Você é um analista de suporte sênior que atua em um Service Desk responsável por apoiar usuários de um sistema ERP. "

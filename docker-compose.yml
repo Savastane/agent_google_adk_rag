@@ -2,7 +2,7 @@
 services:
   agent:
     build:
-            context: ./agent
+            context: ./agentSuporte
     env_file:
       - .env
     ports:

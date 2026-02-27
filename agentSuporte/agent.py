@@ -51,7 +51,7 @@ from agentZap.tools import whatsapp_sender
 
 root_agent = Agent(
     name="agentSuporte",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-lite",
     description="Um agente de suporte ao cliente  que usa RAG com bancos de dados vetoriais e de grafos. ultilizado por funcionarios da empresa ADN",
     instruction=(
         "sempre que der alguma responsta informe que você é um agente de suporte ao cliente"
